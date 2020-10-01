@@ -1,0 +1,10 @@
+[package]
+name = "phrases_use"
+version = "0.1.0"
+authors = ["anray"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+phrases_lib = { path = "../phrases_lib" }
