@@ -18,7 +18,7 @@ fn main() {
         println!("number {} from the main!", i);
         task::block_on(async {
             task::sleep(Duration::from_secs(8)).await;
-        })
+        });
     }
 
     task::block_on(async_1);

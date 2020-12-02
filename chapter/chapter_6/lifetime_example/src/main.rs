@@ -52,8 +52,7 @@ fn long_str<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 
 fn long_str_with_tip<'a, T>(x: &'a str, y: &'a str, tip: T) -> &'a str
-    where T: Display
-{
+    where T: Display {
     println!("Tip: {}", tip);
     if x.len() > y.len() {
         x

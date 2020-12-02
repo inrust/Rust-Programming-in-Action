@@ -65,7 +65,6 @@ pub async fn heap_sort<T: cmp::PartialOrd>(arr: &mut Vec<T>) {
     }
 }
 
-
 fn build_heap<T: cmp::PartialOrd>(arr: &mut Vec<T>) {
     let len = arr.len();
     for i in (0..len / 2).rev() {
