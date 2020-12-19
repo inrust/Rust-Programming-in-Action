@@ -24,18 +24,16 @@ fn main() {
     map.insert("zhangsan", 97);
     map.insert("lisi", 86);
     map.insert("wangwu", 55);
-
     println!("{:?}", map);
 
     for (_, val) in map.iter_mut() {
         *val += 2;
     }
-
     println!("{:?}", map);
 
-    map.remove("wangwu");
+    let result = map.remove("wangwu");
     println!("{:?}", map);
-    println!("zhangsan: {}, lisi: {:?}", map["zhangsan"], map.get("lisi"));
+    println!("{:?}", result);
 
     println!("zhangsan: {}", map["zhangsan"]);
     // println!("wangwu: {}", map["wangwu"]);
