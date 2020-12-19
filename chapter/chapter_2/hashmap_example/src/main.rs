@@ -33,7 +33,7 @@ fn main() {
 
     println!("{:?}", map);
 
-    map.remove(&"wangwu");
+    map.remove("wangwu");
     println!("{:?}", map);
     println!("zhangsan: {}, lisi: {:?}", map["zhangsan"], map.get("lisi"));
 
