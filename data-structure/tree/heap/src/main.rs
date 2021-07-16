@@ -35,14 +35,10 @@ fn heapify_up_down(nums: &mut Vec<i32>, idx: usize, len: usize) {
     }
 }
 
-pub fn insert(nums: &mut Vec<i32>, x: i32) -> bool {
+pub fn insert(nums: &mut Vec<i32>, x: i32) {
     nums.push(x);
 
-    if nums.len() > 1 {
-        heapify_down_up(nums, nums.len() - 1);
-    }
-
-    true
+    heapify_down_up(nums, nums.len() - 1);
 }
 
 pub fn remove_max(nums: &mut Vec<i32>) -> Option<i32> {
